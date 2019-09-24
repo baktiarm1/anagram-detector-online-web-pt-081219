@@ -10,7 +10,7 @@ class Anagram
     splitWord = @word.split('').sort
 
     anagramArr = array.select do |anagram|
-      anagram == splitWord
+     anagram.split('').sort == splitWord
     end 
   anagramArr
   end 
