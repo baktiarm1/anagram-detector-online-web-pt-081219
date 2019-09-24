@@ -7,6 +7,11 @@ class Anagram
   end 
   
   def match(array)
+    splitWord = @word.split('').sort
+
+    anagramArr = array.select do |anagram|
+      anagram == splitWord
+    end 
+  anagramArr
   end 
-  
 end 
